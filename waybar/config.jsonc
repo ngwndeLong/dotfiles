@@ -1,0 +1,45 @@
+
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 24,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/separator",
+    "hyprland/window"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "custom/separator",
+    "network",
+    "custom/separator",
+    "battery",
+    "custom/separator",
+    "clock"
+  ],
+
+  "custom/separator": {
+    "format": "|"
+  },
+
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M}",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "vol {volume}%"
+  },
+
+  "network": {
+    "format-wifi": "net",
+    "format-ethernet": "eth",
+    "format-disconnected": "no-net"
+  },
+
+  "battery": {
+    "format": "bat {capacity}%"
+  }
+}
